@@ -4,6 +4,8 @@ import {ProductCard} from "@/components/ProductCard";
 import {Hero} from "@/components/Hero";
 import {Suspense} from "react";
 
+
+
 export default async function Home() {
     const homeContent = await getAllEntries("home")
     const products= await fetchProducts()

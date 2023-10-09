@@ -10,10 +10,7 @@ export const  getProductById = async (productId: number): Promise<any> => {
         }
 
         const result = await fetchGraphQL(getProductByIdQuery, vars)
-        console.log("result", result)
-
         const product = result.data.site.product
-        console.log("product", product)
 
         if (product) {
             return product
@@ -21,7 +18,6 @@ export const  getProductById = async (productId: number): Promise<any> => {
             return null
         }
     } catch (e) {
-        console.log("e", e)
         return null
     }
 }

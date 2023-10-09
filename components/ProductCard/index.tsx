@@ -1,12 +1,24 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+interface ProductCardProps {
+    product: productContent;
+}
 
+interface productContent {
+        entityId: string,
+        name: string,
+        image: string,
+    prices: {
+            price: {
+                value: string
+            }
+    }
+}
 
-
-export const ProductCard = ({product}: any) => {
+export const ProductCard = ({product}: ProductCardProps) => {
   return (
-    <div key={product.entityId}>
+    <div key={product.name}>
         <Image
           alt={product.name}
           height={300}

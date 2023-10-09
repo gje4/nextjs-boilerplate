@@ -2,7 +2,7 @@ import {fetchGraphQL} from '../../../fetchers/fetch-graphql'
 import {fetchAllProductQuery} from './fetch-all-product.graphql'
 
 
-export type Product = { node: {name: string, entityId: string, path: string,defaultImage: {urlOriginal: string} } }
+type Product = { node: {name: string, entityId: string, path: string,defaultImage: {urlOriginal: string} } }
 
 export type Products = [Product]
 
