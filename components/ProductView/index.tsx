@@ -27,6 +27,7 @@ export const ProductView = ({product}: ProductViewProps) => {
                     <Image alt={product.name}
                            height={300}
                            width={300}
+                           priority
                            className="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200"
                            src={product.defaultImage.urlOriginal}/>
 

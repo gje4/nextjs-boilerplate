@@ -22,3 +22,5 @@ export default async function Product({
     );
 }
 
+
+export const runtime = 'edge';
