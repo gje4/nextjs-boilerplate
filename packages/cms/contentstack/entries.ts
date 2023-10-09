@@ -29,7 +29,6 @@ export const getAllEntries = async (contentType: CmsContentTypes) => {
         // err object
         return err
       })
-console.log("entry", entry)
   return entry
 }
 
